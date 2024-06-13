@@ -1,0 +1,73 @@
+.blog-1 .main-btn .btn {
+    animation-name: zoom;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes zoom {
+    0% {
+        -webkit-transform: scale(1)
+    }
+
+    50% {
+        -webkit-transform: scale(1.08)
+    }
+
+    100% {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.08)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.blog-2-1 .main-grid .box .image img {
+    transition: all 0.3s ease-in-out;
+}
+
+.blog-2-1 .main-grid .box:hover .image img {
+    transform: scale(1.08);
+}
+.blog-2-2 .main-grid .main-box .box{
+    padding: 20px 0px 0px 15px;
+}
+
+@media all and (max-width: 767px){
+    nav{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        max-width: 250px;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        transition: all 0.3s ease-in-out;
+        background: #590505 !important;
+    }
+    nav ul{
+        padding: 20px !important;
+        display: inline-block !important;
+        width: 100% !important;
+    }
+    nav ul li{
+        margin: 20px 0px;
+        color: #FFFFFF !important;
+    }
+    .swiper-pagination-bullet{
+        width: 12px;
+        height: 12px;
+    }
+}
